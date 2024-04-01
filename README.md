@@ -1,0 +1,19 @@
+1) This is the Repository for the implementation of the BackEnd Assignemnt Gyan Grove. The tech Stack that is used in this Project is Nodejs, express js for the Backend, MongoDB for the database, and RapidAPI/Postman for Client Request.
+Along with these as mentioned in the project document external APIs are also used in this project which are used to calculate the weather and the distance based on the latitude and the longitudes.
+
+
+2) The Project folder consists of a Different Folder. The main piece of logic lies in the router. Here I have defined two routes for adding a event  and fetching a events.
+
+3) The given dataset is converted to JSON which is directly fed to MongoDB for retrieval.
+
+4) After running the server using nodemon index.js in the get request  to "http://localhost:3000/location/40.7128/-74.0060/2024-03-15" where the user is specifying the latitude,longitude and date of events.Then this is used to find the events which will be happening within 14 days from the given date and also some extra information like weather of the city and distance between cities.
+5) The JSON response are sorted and displayed in pages each of size of 10 each.
+ ![image](https://github.com/CuntAdnan/GyanGrove-assignment-Backend/assets/98183132/0cd8b809-8833-4549-8fb4-7190ac856b96)
+6) For adding a new event we simply make a post request to "http://localhost:3000/add/data" where we enter all the details for the events and the changes are reflected in the Mongodb database.
+![image](https://github.com/CuntAdnan/GyanGrove-assignment-Backend/assets/98183132/230ebad0-528b-475a-bb58-3aea04da4d30)
+![image](https://github.com/CuntAdnan/GyanGrove-assignment-Backend/assets/98183132/5cead5b7-4c5d-4ff1-9c28-895206113220)
+
+
+
+To run this project simply fork this project . Set up your mongodb credentials and store the credentials in your env files.
+Simply run the server using nodemon index.js and project should be running.
