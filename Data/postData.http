@@ -1,0 +1,11 @@
+POST https://gyangrove-assignment-backend-1.onrender.com/add/data
+Content-Type: application/json
+
+{
+    "event_name": "Gyan Grove Assignment Evaluation",
+    "city_name": "Delhi",
+    "date": "2024-04-12",
+    "time": "22:34:00",
+    "latitude": 28.7041,
+    "longitude": 77.1025
+}
