@@ -6,10 +6,10 @@ Along with these as mentioned in the project document external APIs are also use
 
 3) The given dataset is converted to JSON which is directly fed to MongoDB for retrieval.
 
-4) After running the server using nodemon index.js in the get request  to "http://localhost:3000/location/40.7128/-74.0060/2024-03-15" where the user is specifying the latitude,longitude and date of events.Then this is used to find the events which will be happening within 14 days from the given date and also some extra information like weather of the city and distance between cities.
+4) After running the server using nodemon index.js in the get request  to "https://gyangrove-assignment-backend-1.onrender.com/location/:latitude/:longitude/:date" where the user is specifying the latitude,longitude and date of events.Then this is used to find the events which will be happening within 14 days from the given date and also some extra information like weather of the city and distance between cities.
 5) The JSON response are sorted and displayed in pages each of size of 10 each.
  ![image](https://github.com/CuntAdnan/GyanGrove-assignment-Backend/assets/98183132/0cd8b809-8833-4549-8fb4-7190ac856b96)
-6) For adding a new event we simply make a post request to "http://localhost:3000/add/data" where we enter all the details for the events and the changes are reflected in the Mongodb database.
+6) For adding a new event we simply make a post request to "https://gyangrove-assignment-backend-1.onrender.com/add/data" where we enter all the details for the events and the changes are reflected in the Mongodb database.
 ![image](https://github.com/CuntAdnan/GyanGrove-assignment-Backend/assets/98183132/230ebad0-528b-475a-bb58-3aea04da4d30)
 ![image](https://github.com/CuntAdnan/GyanGrove-assignment-Backend/assets/98183132/5cead5b7-4c5d-4ff1-9c28-895206113220)
 
